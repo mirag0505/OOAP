@@ -32,7 +32,7 @@ public BoundedStack<T> BoundedStack(int count); // постусловие: со�
 
 // запрос:
 // предусловие: стек не пустой; 
-public int checkSizeStack();
+public int checkStackFull();
 
 // команды:
 // постусловие: в стек добавлено новое значение
@@ -81,7 +81,7 @@ public void Stack(int size) // конструктор
     clear()
 
   public void push(T value)
-    checkSizeStack()
+    checkStackFull()
     stack.Append(value)
 
   public void pop()
@@ -107,7 +107,7 @@ public void Stack(int size) // конструктор
       peek_status = PEEK_ERR
     return result
 
-  public int checkSizeStack()
+  public int checkStackFull()
     var size = size()
 
     if stack.Length === size {
