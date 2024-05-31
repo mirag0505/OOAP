@@ -159,13 +159,13 @@ public void clear()
     list = []
     head();
 
-public void add_tail(T value);
+public void add_tail(T value)
 
-public void remove_all(T value);
+public void remove_all(T value)
 
-public void replace(T value);
+public void replace(T value)
 
-public void find(T value);
+public void find(T value)
 
 // запросы
 public T get()
